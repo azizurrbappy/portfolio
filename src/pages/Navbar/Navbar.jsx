@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="py-3.5 px-4 sm:px-6 lg:px-8 sticky top-0 backdrop-blur-2xl shadow-md">
+    <header className="py-3.5 px-4 sm:px-6 lg:px-8 sticky top-0 backdrop-blur-2xl shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-2">
           <span className="text-2xl font-bold text-stone-900 dark:text-white">
