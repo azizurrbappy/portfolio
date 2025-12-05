@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+ <title>Creative Agency Landing Page</title>
+ <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+ <script>
+  tailwind.config = {
+   darkMode: "class",
+   theme: {
+    extend: {
+     colors: {
+      primary: "#F97316", // orange-500
+      "background-light": "#FFF7ED", // orange-50
+      "background-dark": "#1C1917", // stone-900
+     },
+     fontFamily: {
+      display: ["Poppins", "sans-serif"],
+     },
+     borderRadius: {
+      DEFAULT: "0.5rem", // 8px
+     },
+    },
+   },
+  };
+ </script>
+ <style>
+  body {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+   min-height: max(884px, 100dvh);
+  }
+
+  .material-icons {
+   font-family: 'Material Icons';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 24px;
+   line-height: 1;
+   letter-spacing: normal;
+   text-transform: none;
+   display: inline-block;
+   white-space: nowrap;
+   word-wrap: normal;
+   direction: ltr;
+   -webkit-font-feature-settings: 'liga';
+   -webkit-font-smoothing: antialiased;
+  }
+
+  progress {
+   vertical-align: baseline;
+  }
+
+  progress::-webkit-progress-bar {
+   background-color: #e5e7eb;
+   border-radius: 9999px;
+  }
+
+  .dark progress::-webkit-progress-bar {
+   background-color: #475569;
+  }
+
+  progress::-webkit-progress-value {
+   background-color: #f97316;
+   border-radius: 9999px;
+  }
+
+  .testimonial-card-bg {
+   background-color: #FFF7F2;
+  }
+
+  .dark .testimonial-card-bg {
+   background-color: #2D2D2D;
+  }
+
+  .social-icon {
+   font-size: 1.5rem;
+   line-height: 1;
+  }
+ </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-900 dark:text-stone-100">
+ <div class="flex flex-col min-h-screen">
+  <header class="py-6 px-4 sm:px-6 lg:px-8">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center gap-2">
+     <span class="text-2xl font-bold text-stone-900 dark:text-white">CreDesign</span>
+    </div>
+    <nav class="hidden md:flex items-center space-x-8">
+     <a
+      class="text-base font-medium text-stone-600 dark:text-stone-300 hover:text-primary dark:hover:text-primary transition-colors"
+      href="#">Home</a>
+     <a
+      class="text-base font-medium text-stone-600 dark:text-stone-300 hover:text-primary dark:hover:text-primary transition-colors"
+      href="#">Services</a>
+     <a
+      class="text-base font-medium text-stone-600 dark:text-stone-300 hover:text-primary dark:hover:text-primary transition-colors"
+      href="#">Portfolio</a>
+     <a
+      class="text-base font-medium text-stone-600 dark:text-stone-300 hover:text-primary dark:hover:text-primary transition-colors"
+      href="#">Blog</a>
+     <a
+      class="bg-primary text-white text-base font-semibold py-2 px-6 rounded-md shadow-md hover:bg-orange-600 transition-colors"
+      href="#">Contact</a>
+    </nav>
+    <button class="md:hidden text-stone-900 dark:text-white">
+     <span class="material-icons text-3xl">menu</span>
+    </button>
+   </div>
+  </header>
+  <main class="flex-grow flex flex-col justify-center px-4 sm:px-6 lg:px-8">
+   <div class="container mx-auto text-left">
+    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-stone-900 dark:text-white max-w-3xl">
+     Creative Design and Web <span class="text-primary">Solutions</span>
+    </h1>
+    <p class="mt-6 text-lg text-stone-600 dark:text-stone-400 max-w-xl">
+     Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
+     facere possimus.
+    </p>
+    <a
+     class="mt-10 inline-block bg-primary text-white font-semibold py-4 px-10 rounded-lg shadow-lg hover:bg-orange-600 transition-colors text-lg"
+     href="#">
+     Download My CV
+    </a>
+   </div>
+  </main>
+ </div>
+</body>
+
+<section class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+ <div class="flex flex-col items-center justify-center min-h-screen p-4">
+  <div class="bg-background-light dark:bg-background-dark container mx-auto p-6 md:p-12">
+   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div class="w-full">
+     <img alt="Portrait of a young man with glasses and a beanie, wearing a brown shirt over a red v-neck t-shirt."
+      class="w-full h-auto object-cover rounded-lg"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQQXS7vJifevU8DLNvoesjlcmRC-QRQWSjHEMfUhKBq-nHF9J73INI_Tuk7tucTff-uhmhTQrSF6nQ4agj4VaLSM-ZU8W5JAYriXQuu84oO1HWSvy83evc05DNzbBQHcu5ck4uNerCc4TR5XwM6jcdFlBLmrxHX0k8IeHuEILa9307NINEJo8ZULuUkUdHi82BeQCI-c-jVu5yOWwIgxd2bwxyhrMotDIXbO4SbsxuqyOaVxpzpB5L41WzRghFM92h5Fk1fbh1ZGg" />
+    </div>
+    <div>
+     <div class="flex items-center gap-3 mb-4">
+      <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+       <div class="w-2 h-2 bg-white rounded-full"></div>
+      </div>
+      <p class="text-sm font-medium text-gray-600 dark:text-gray-400">About Me</p>
+     </div>
+     <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
+      I Can Design Anything You Want
+     </h1>
+     <p class="text-gray-600 dark:text-gray-400 mb-8">
+      Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
+      facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
+      officiis. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.
+     </p>
+     <div class="flex flex-col sm:flex-row gap-8 mb-8">
+      <div class="flex items-center gap-4">
+       <div class="p-4 bg-orange-50 dark:bg-gray-800 rounded-lg border border-orange-200 dark:border-gray-700">
+        <span class="material-icons text-primary text-3xl">verified</span>
+       </div>
+       <div>
+        <p class="text-2xl font-bold text-primary">3+</p>
+        <p class="font-semibold text-gray-800 dark:text-gray-200">Complete Project</p>
+       </div>
+      </div>
+      <div class="flex items-center gap-4">
+       <div class="p-4 bg-orange-50 dark:bg-gray-800 rounded-lg border border-orange-200 dark:border-gray-700">
+        <span class="material-icons text-primary text-3xl">schedule</span>
+       </div>
+       <div>
+        <p class="text-2xl font-bold text-primary">0+</p>
+        <p class="font-semibold text-gray-800 dark:text-gray-200">Year of experience</p>
+       </div>
+      </div>
+     </div>
+     <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-10">
+      <div class="flex items-center gap-3">
+       <span class="material-icons text-primary">check_box</span>
+       <span class="text-gray-700 dark:text-gray-300">Work simple and cline design</span>
+      </div>
+      <div class="flex items-center gap-3">
+       <span class="material-icons text-primary">check_box</span>
+       <span class="text-gray-700 dark:text-gray-300">Web Design Full stack</span>
+      </div>
+      <div class="flex items-center gap-3">
+       <span class="material-icons text-primary">check_box</span>
+       <span class="text-gray-700 dark:text-gray-300">New idea and user friendly design</span>
+      </div>
+      <div class="flex items-center gap-3">
+       <span class="material-icons text-primary">check_box</span>
+       <span class="text-gray-700 dark:text-gray-300">Unlimited Revisions</span>
+      </div>
+     </div>
+     <a
+      class="inline-block bg-primary text-white font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-orange-600 transition-colors duration-300"
+      href="#">
+      Download My CV
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="bg-background-light dark:bg-background-dark font-display">
+ <div class="p-4 sm:p-6 md:p-8">
+  <div class="max-w-7xl mx-auto">
+   <header class="text-center mb-8">
+    <div class="inline-flex items-center gap-2 mb-4">
+     <span class="material-symbols-outlined text-primary text-2xl">
+      api
+     </span>
+     <span class="text-sm font-medium text-gray-500 dark:text-gray-400">My Service</span>
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
+     SERVICES I OFFER
+    </h1>
+   </header>
+   <main>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+     <div
+      class="bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 text-center transition-all hover:shadow-lg dark:hover:bg-gray-700">
+      <div class="mb-4">
+       <svg class="h-12 w-12 text-primary mx-auto" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M7.5 18.75a3.75 3.75 0 003.75 3.75h1.5a3.75 3.75 0 003.75-3.75"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+       </svg>
+      </div>
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">UI/UX Design</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+       Hen our power of choice is untrammelled and when nothing prevents our being able
+      </p>
+     </div>
+     <div
+      class="bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 text-center transition-all hover:shadow-lg dark:hover:bg-gray-700">
+      <div class="mb-4">
+       <svg class="h-12 w-12 text-primary mx-auto" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+        <path
+         d="M9.58 8.01l.46-1.53a.75.75 0 011.458 0l.46 1.53m-1.46-2.022a2.25 2.25 0 00-2.228 1.956L7.5 12.5l1.01 3.535a2.25 2.25 0 002.228 1.956h2.524a2.25 2.25 0 002.228-1.956L16.5 12.5l-.832-2.912a2.25 2.25 0 00-2.228-1.956H9.58z"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+       </svg>
+      </div>
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Mobile App</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+       Hen our power of choice is untrammelled and when nothing prevents our being able
+      </p>
+     </div>
+     <div
+      class="bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 text-center transition-all hover:shadow-lg dark:hover:bg-gray-700">
+      <div class="mb-4">
+       <svg class="h-12 w-12 text-primary mx-auto" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M19.5 13.5V9a6 6 0 00-12 0v4.5m10.5-3.75h.008v.008h-.008v-.008zM9 13.5h.008v.008H9v-.008z"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+       </svg>
+      </div>
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Graphic Design</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+       Hen our power of choice is untrammelled and when nothing prevents our being able
+      </p>
+     </div>
+     <div
+      class="bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 text-center transition-all hover:shadow-lg dark:hover:bg-gray-700">
+      <div class="mb-4">
+       <svg class="h-12 w-12 text-primary mx-auto" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-1.621-.871A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25z"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M15 6H9m6 3H9m6 3H9" stroke-linecap="round" stroke-linejoin="round"></path>
+       </svg>
+      </div>
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Web Developer</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+       Hen our power of choice is untrammelled and when nothing prevents our being able
+      </p>
+     </div>
+     <div
+      class="bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 text-center transition-all hover:shadow-lg dark:hover:bg-gray-700">
+      <div class="mb-4">
+       <svg class="h-12 w-12 text-primary mx-auto" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527c.46-.329 1.025-.286 1.415.099l.75.75c.386.386.43.955.099 1.415l-.527.737c-.25.35-.272.806-.108 1.204.166.397.506.71.93.78l.894.149c.542.09.94.56.94 1.11v1.093c0 .55-.398 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.93.78-.164.398-.142.854.108 1.204l.527.738c.33.46.286 1.025-.1 1.415l-.75.75c-.386.386-.955.43-1.415.099l-.737-.527c-.35-.25-.806-.272-1.204-.108-.397.166-.71.506-.78.93l-.149.894c-.09.542-.56.94-1.11.94h-1.093c-.55 0-1.02-.398-1.11-.94l-.149-.894c-.07-.424-.384-.764-.78-.93-.398-.164-.855-.142-1.205.108l-.737.527c-.46.329-1.025.286-1.415-.099l-.75-.75c-.386-.386-.43-.955-.099-1.415l.527-.737c.25-.35.272-.806.108-1.204-.166-.397-.506-.71-.93-.78l-.894-.149c-.542-.09-.94-.56-.94-1.11v-1.093c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.764-.383.93-.78.164-.398.142-.854-.108-1.204l-.527-.738c-.33-.46-.286-1.025.1-1.415l.75-.75c.386-.386.955-.43 1.415.099l.737.527c.35.25.806.272 1.204.108.397-.166.71-.506.78-.93l.149-.894z"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M12 8.25c-2.071 0-3.75 1.679-3.75 3.75s1.679 3.75 3.75 3.75 3.75-1.679 3.75-3.75-1.679-3.75-3.75-3.75z"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+       </svg>
+      </div>
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">SEO Optimisation</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+       Hen our power of choice is untrammelled and when nothing prevents our being able
+      </p>
+     </div>
+     <div
+      class="bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 text-center transition-all hover:shadow-lg dark:hover:bg-gray-700">
+      <div class="mb-4">
+       <svg class="h-12 w-12 text-primary mx-auto" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M12 6.042h.008v.008H12V6.042zm0 14.25h.008v.008H12v-.008z" stroke-linecap="round"
+         stroke-linejoin="round"></path>
+       </svg>
+      </div>
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">WordPress Developer</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+       Hen our power of choice is untrammelled and when nothing prevents our being able
+      </p>
+     </div>
+     <div
+      class="bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 text-center transition-all hover:shadow-lg dark:hover:bg-gray-700">
+      <div class="mb-4">
+       <svg class="h-12 w-12 text-primary mx-auto" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M10.5 19.5h3m-6.75 2.25h10.5a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 4.5v15a2.25 2.25 0 002.25 2.25z"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M9 13.5l3 3m0 0l3-3m-3 3v-6m-1.5-6H12m3 0h.008v.008H15V7.5z" stroke-linecap="round"
+         stroke-linejoin="round"></path>
+       </svg>
+      </div>
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">App Development</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+       Hen our power of choice is untrammelled and when nothing prevents our being able
+      </p>
+     </div>
+     <div
+      class="bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 text-center transition-all hover:shadow-lg dark:hover:bg-gray-700">
+      <div class="mb-4">
+       <svg class="h-12 w-12 text-primary mx-auto" fill="none" stroke="currentColor" stroke-width="1.5"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+         d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+        <path
+         d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+         stroke-linecap="round" stroke-linejoin="round"></path>
+       </svg>
+      </div>
+      <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Business Strategy</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+       Hen our power of choice is untrammelled and when nothing prevents our being able
+      </p>
+     </div>
+    </div>
+   </main>
+  </div>
+ </div>
+</section>
+
+<section
+ class="bg-background-light dark:bg-background-dark font-display text-text-light-primary dark:text-text-dark-primary">
+ <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+  <header class="text-center py-8">
+   <div class="inline-flex items-center gap-2 mb-4">
+    <span class="material-icons text-primary text-2xl">assignment_ind</span>
+    <span class="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">My Resume</span>
+   </div>
+   <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">10+ YEARS OF EXPERIENCE</h1>
+  </header>
+  <main class="mt-12">
+   <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16">
+    <div class="relative lg:col-span-1 flex lg:flex-col lg:items-center">
+     <div class="absolute top-0 left-4 lg:left-1/2 w-0.5 h-full bg-border-light dark:bg-border-dark -translate-x-1/2">
+     </div>
+     <div class="flex items-center gap-4 lg:gap-0 lg:flex-col lg:w-full">
+      <div class="relative z-10 w-8 h-8 rounded-full bg-primary flex-shrink-0"></div>
+      <h2 class="font-semibold text-lg lg:mt-4">Education</h2>
+     </div>
+    </div>
+    <div class="lg:col-span-3 ml-12 lg:ml-0">
+     <div class="bg-card-light dark:bg-card-dark p-6 rounded-DEFAULT shadow-sm">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+       <div class="space-y-2">
+        <h3 class="font-bold">BSc in Computer Science</h3>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">University of ULAV (2018 - 2022)</p>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Pomnis voluptas assumenda est, omnis
+         dolor repellendus.</p>
+       </div>
+       <div
+        class="space-y-2 border-t md:border-t-0 md:border-l border-border-light dark:border-border-dark pt-6 md:pt-0 md:pl-6">
+        <h3 class="font-bold">AS - Science &amp; Information</h3>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">University of ULAV (2016 - 2018)</p>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Pomnis voluptas assumenda est, omnis
+         dolor repellendus.</p>
+       </div>
+       <div
+        class="space-y-2 border-t md:border-t-0 md:border-l border-border-light dark:border-border-dark pt-6 md:pt-0 md:pl-6">
+        <h3 class="font-bold">Secondary School Education</h3>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Kindergarten (2006 - 2016)</p>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Pomnis voluptas assumenda est, omnis
+         dolor repellendus.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16">
+    <div class="relative lg:col-span-1 flex lg:flex-col lg:items-center">
+     <div class="absolute top-0 left-4 lg:left-1/2 w-0.5 h-full bg-border-light dark:bg-border-dark -translate-x-1/2">
+     </div>
+     <div class="flex items-center gap-4 lg:gap-0 lg:flex-col lg:w-full">
+      <div class="relative z-10 w-8 h-8 rounded-full bg-primary flex-shrink-0"></div>
+      <h2 class="font-semibold text-lg lg:mt-4">Software Skills</h2>
+     </div>
+    </div>
+    <div class="lg:col-span-3 ml-12 lg:ml-0">
+     <div class="bg-card-light dark:bg-card-dark p-6 rounded-DEFAULT shadow-sm">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+       <div class="space-y-4">
+        <h3 class="font-bold">UI/UX Design</h3>
+        <div class="space-y-3">
+         <div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span class="flex-grow">Figma</span>
+          <span>90%</span>
+         </div>
+         <progress class="w-full h-1" max="100" value="90"></progress>
+         <div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span class="flex-grow">Adobe XD</span>
+          <span>85%</span>
+         </div>
+         <progress class="w-full h-1" max="100" value="85"></progress>
+         <div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span class="flex-grow">Photoshop</span>
+          <span>80%</span>
+         </div>
+         <progress class="w-full h-1" max="100" value="80"></progress>
+        </div>
+       </div>
+       <div
+        class="space-y-4 border-t md:border-t-0 md:border-l border-border-light dark:border-border-dark pt-6 md:pt-0 md:pl-6">
+        <h3 class="font-bold">Web Developer</h3>
+        <div class="space-y-3">
+         <div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span class="flex-grow">WordPress</span>
+          <span>90%</span>
+         </div>
+         <progress class="w-full h-1" max="100" value="90"></progress>
+         <div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span class="flex-grow">Mockplus</span>
+          <span>85%</span>
+         </div>
+         <progress class="w-full h-1" max="100" value="85"></progress>
+         <div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span class="flex-grow">Weebly</span>
+          <span>80%</span>
+         </div>
+         <progress class="w-full h-1" max="100" value="80"></progress>
+        </div>
+       </div>
+       <div
+        class="space-y-4 border-t md:border-t-0 md:border-l border-border-light dark:border-border-dark pt-6 md:pt-0 md:pl-6">
+        <h3 class="font-bold">App Development</h3>
+        <div class="space-y-3">
+         <div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span class="flex-grow">Quixy</span>
+          <span>92%</span>
+         </div>
+         <progress class="w-full h-1" max="100" value="92"></progress>
+         <div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span class="flex-grow">AppyPie</span>
+          <span>87%</span>
+         </div>
+         <progress class="w-full h-1" max="100" value="87"></progress>
+         <div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span class="flex-grow">iBuildApp</span>
+          <span>82%</span>
+         </div>
+         <progress class="w-full h-1" max="100" value="82"></progress>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <div class="relative lg:col-span-1 flex lg:flex-col lg:items-center">
+     <div class="absolute top-0 left-4 lg:left-1/2 w-0.5 h-full bg-border-light dark:bg-border-dark -translate-x-1/2">
+     </div>
+     <div class="flex items-center gap-4 lg:gap-0 lg:flex-col lg:w-full">
+      <div class="relative z-10 w-8 h-8 rounded-full bg-primary flex-shrink-0"></div>
+      <h2 class="font-semibold text-lg lg:mt-4">Experience</h2>
+     </div>
+    </div>
+    <div class="lg:col-span-3 ml-12 lg:ml-0">
+     <div class="bg-card-light dark:bg-card-dark p-6 rounded-DEFAULT shadow-sm">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+       <div class="space-y-2">
+        <h3 class="font-bold">Web Developer &amp; Trainer</h3>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Brac Developer Team - (2012 - 2016)
+        </p>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Pomnis voluptas assumenda est, omnis
+         dolor repellendus.</p>
+       </div>
+       <div
+        class="space-y-2 border-t md:border-t-0 md:border-l border-border-light dark:border-border-dark pt-6 md:pt-0 md:pl-6">
+        <h3 class="font-bold">Front-end Developer</h3>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Brane - (2020 - 2011)</p>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Pomnis voluptas assumenda est, omnis
+         dolor repellendus.</p>
+       </div>
+       <div
+        class="space-y-2 border-t md:border-t-0 md:border-l border-border-light dark:border-border-dark pt-6 md:pt-0 md:pl-6">
+        <h3 class="font-bold">UI/UX Designer</h3>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Google Out Tech - (2017 - Present)
+        </p>
+        <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Pomnis voluptas assumenda est, omnis
+         dolor repellendus.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+ </div>
+</section>
+
+<section class="bg-background-light dark:bg-background-dark font-display">
+ <div class="min-h-screen flex items-center justify-center p-4">
+  <div class="w-full max-w-6xl mx-auto py-12 md:py-24 px-4">
+   <div class="text-center mb-4">
+    <div class="inline-flex items-center gap-2">
+     <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
+      <svg class="h-4 w-4 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+       <path clip-rule="evenodd"
+        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+        fill-rule="evenodd"></path>
+      </svg>
+     </div>
+     <span class="text-sm font-medium text-primary">Testimonial</span>
+    </div>
+   </div>
+   <h1 class="text-3xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-12 md:mb-16">
+    CLIENT FEEDBACK
+   </h1>
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="testimonial-card-bg p-8 rounded-lg">
+     <div class="flex items-center mb-6">
+      <img alt="Profile picture of Robert E. Wolf" class="w-16 h-16 rounded-full object-cover mr-4"
+       src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-igHX9lBCCjNZ3yd-Ezqe605SLRfVcaNrN_7B4Q5ZioWcuC1Ypm96xAr9qMeAQfEk6RXXVyaWa0KFYeJnTPF2JMTjKu_L-Z2csBxB-F88rmfHz6GksNV1SJMFUyblebqgxQgovfhtnsVkoMUw4tXGS2lrjKtBsewDpNUdXp38RsQLVY2wVpNZOMQ8Qv1kLc5REQqMOCexNExmy7xMyGcGb606N6H1VJ5LlxoActlJgpaWlYwfF-a0z3-FQYm8AjMLLaXSokCamm0" />
+      <div>
+       <p class="font-bold text-lg text-gray-900 dark:text-white">Robert E. Wolf</p>
+       <p class="text-sm text-gray-600 dark:text-gray-400">Director, Techso</p>
+      </div>
+     </div>
+     <p class="text-gray-700 dark:text-gray-300">
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+      literature fr45 BC, mak it over 2000 years old."
+     </p>
+    </div>
+    <div class="testimonial-card-bg p-8 rounded-lg">
+     <div class="flex items-center mb-6">
+      <img alt="Profile picture of Robert E. Wolf" class="w-16 h-16 rounded-full object-cover mr-4"
+       src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-PlXOCytyeRbJL1EetqLiv9IpowYgKAAQbqaKboKlOi8ab0rwtrPuLBuAXHT950XbdYHSKQ5BI7swOAWMBYbvHoFbe0oz2URKlScF1aBea1fbA0rBRkFdEPhbRwTDzAkjzTYptsSeMoAzW38hgLkcnEf_FQSz4OmuyFRfjwEy62ynfv8GcAZ_uNiAafCSKuLWgzGv3pdJ0Ez8K2HZGfCeNzrOteRhn1tIJkH7c8LThOxbCuNgJE-0ttuAc4Sl2Ft36nxzwCKhFx0" />
+      <div>
+       <p class="font-bold text-lg text-gray-900 dark:text-white">Robert E. Wolf</p>
+       <p class="text-sm text-gray-600 dark:text-gray-400">Director, Techso</p>
+      </div>
+     </div>
+     <p class="text-gray-700 dark:text-gray-300">
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+      literature fr45 BC, mak it over 2000 years old."
+     </p>
+    </div>
+    <div class="testimonial-card-bg p-8 rounded-lg">
+     <div class="flex items-center mb-6">
+      <img alt="Profile picture of John K. Meraz" class="w-16 h-16 rounded-full object-cover mr-4"
+       src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ3TLJ_-ywxx1vjV6H6wpszYKdcUTSiKwGnz-q1wuwnUW4XSiA6THvlZTyuAqBavzTsXAOYsVwHAHUpSWoqol_RLCncEvRDj33okfAcvrWgRtfoPGZviu_4RvlWc37ITAFAke60C4ZyJeXx4tUDcs3hcga59qjmQ0xPnS4lpHOmlLB_U-dMJJHs9vXWt-WCt_gLarradzjzHJhemiKOTATJZFWCPNqSMOe5apAwMYr05YeQmotpL3oa2Z4v8W9M3vFGpFFDM-ef5Y" />
+      <div>
+       <p class="font-bold text-lg text-gray-900 dark:text-white">John K. Meraz</p>
+       <p class="text-sm text-gray-600 dark:text-gray-400">CTO, Xyz Group</p>
+      </div>
+     </div>
+     <p class="text-gray-700 dark:text-gray-300">
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+      literature fr45 BC, mak it over 2000 years old."
+     </p>
+    </div>
+   </div>
+   <div class="flex justify-center items-center mt-12 md:mt-16 space-x-2">
+    <div class="w-2.5 h-2.5 bg-primary/40 dark:bg-primary/30 rounded-full"></div>
+    <div class="w-2.5 h-2.5 bg-primary/40 dark:bg-primary/30 rounded-full"></div>
+    <div class="w-2.5 h-2.5 bg-primary/40 dark:bg-primary/30 rounded-full"></div>
+    <div class="w-3 h-3 rounded-full border-2 border-primary"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="bg-background-light dark:bg-background-dark font-display">
+ <div class="p-4 sm:p-6 md:p-8 lg:p-12">
+  <div class="max-w-7xl mx-auto">
+   <header class="text-center mb-8 md:mb-12">
+    <div class="flex items-center justify-center gap-2 mb-4">
+     <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+      <span class="material-icons text-white text-base">auto_awesome</span>
+     </div>
+     <p class="text-sm font-medium text-gray-600 dark:text-gray-400">My Portfolio</p>
+    </div>
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-gray-100">VISIT MY
+     PORTFOLIO</h1>
+   </header>
+   <nav class="mb-8 md:mb-12">
+    <ul
+     class="flex flex-wrap items-center justify-center gap-x-6 sm:gap-x-8 gap-y-4 text-sm font-medium text-gray-600 dark:text-gray-400">
+     <li>
+      <a class="text-primary border-b-2 border-primary pb-1" href="#">All</a>
+     </li>
+     <li>
+      <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#">UI/Ux Design</a>
+     </li>
+     <li>
+      <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#">Branding Design</a>
+     </li>
+     <li>
+      <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#">Graphic Design</a>
+     </li>
+     <li>
+      <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#">App Development</a>
+     </li>
+     <li>
+      <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#">Web Design</a>
+     </li>
+    </ul>
+   </nav>
+   <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+    <div class="aspect-square">
+     <img alt="A minimalist white room with a small plant on a side table next to a white lamp."
+      class="w-full h-full object-cover rounded-lg"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYYlimUNvyP61p2q9cLooqFoV2ferwTtAlw03XG1X3Nggq51bC_JAtIG3xON9rHVimhsv3HRsYve6jhAkAFUeq8xx6B6CfhyVQNxKKWheTDSoSoz8pYnSbnkgZK-xwDgAEthAZdD9_8IHQNnR_J9Cx0QUySixXqLrhK_zR4Omo1myi9QwxKr0zzmEA-aMo3DPH0_8rp10Yjn_GxJS3ZBH3pQ_rT3k7lcvKBdJYb6KmrbCfecY00lEhuUlA0i3IWuv55ieMsD83d2s" />
+    </div>
+    <div class="aspect-square">
+     <img alt="An abstract 3D render of a silky grey fabric draped over rectangular shapes."
+      class="w-full h-full object-cover rounded-lg"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhnTWsKH6qp4BaTMC2d-P_4xdPD3TVdvrHW8YBGYYPmgaOCtGWzR1H5d_sxmzykSlxKFSlZB6TrpGl4fnJSFQ_62qU0_vfHXYQkFbY3YTOcRgcU8NNu-5S4SbxsACkkLCsSw3vTiV3gyHmnGtyGd5K5hQKzTh2T0jiwUFK4M0EEF7TFodivGBSQaqa7wIL3A0AiRWMRwJCRmSWerE_gGAxWyMP3Qoeq_ooLhmWZ-5fJWSnXWuJFCPqJjOgz3RmnrOm9kJnh_KfjGc" />
+    </div>
+    <div class="aspect-square">
+     <img alt="A desk setup with a calendar, a planner, a small plant, and other stationery items."
+      class="w-full h-full object-cover rounded-lg"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaL19ljCFnHVowEezgr2Se-hnSYda3OHq2TQbeHYI4zVFWLdX1oGLlMYohmQcglfn8AdhHYhTsKiUSWC2Ow8isj4jImZ3Q1aOdXrpPEn-AOt4ClPd-XAM7tYyjZ1qz5QicD-kmYmBrUbjw1R7109G3mxJtnq9U8aHiC9Gc7WqDbX-g5_xSgvkDgrVI2lIn6LfMjAYdSiYecg8y5Zb4EP_cv8SQRoEZhWx6K8E1Bgy8RSoknN7jE7WLmQ-HoU9mn8YUaC-amLM2P44" />
+    </div>
+    <div class="aspect-square">
+     <img alt="A framed poster of the word Helvetica in bold black and orange typography."
+      class="w-full h-full object-cover rounded-lg"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_2JUsXM_a3tS5G3uid8MaBocvG4nkHF1ZutIbYhtpGf-l8PURuxwULndyFUpFFHNdQJAoqAVFwYmQz6mPuVKB1hbYtwpfOpmPYJb5LX2EYCY_gYpSNYy98BIY1-cyKIMUMhOke_IajLx86PDzuKHrwAlSEsGxT-YoadGqaTfUPc7PU17tnXVn5jKBm7bMEN-Xh507hp_Jv90lCWZseyOFab9M1fpT78zWRCRUf-YbStZdo4xEf2RVtn2keWPHAl0UojX9cOWOZ6w" />
+    </div>
+    <div class="aspect-square">
+     <img alt="A black and white photograph looking down a spiral staircase with white railings."
+      class="w-full h-full object-cover rounded-lg"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuA640AewGIE7wvN3wDhn5jZlR8RjPtzl1s-pPvNyMY-0QinlccIcR-tprkY_8R48Oa8YxTZ9nn1mNkG7Xfa5tHYicgiH9Zchmg-YA8SpUaYWuwnu38Zp7A0wtagz3UnKCYpZ2mFuEbKaDRoSE8Yo-ejApyehdxKpqM59i03fnFPerl-LiFHh7MX8KcdghM8WlIFZ5joPI0uuXInrQaacMjQJT3IVX4p_gCqvmkaqV_jsg7J6tsDHFEd6oBDfhKuxh7D1xcDeJKk7sk" />
+    </div>
+    <div class="aspect-square">
+     <img alt="A close-up shot of a green eucalyptus branch resting on a white tag."
+      class="w-full h-full object-cover rounded-lg"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyTHuTKpS3THtmpC3U7w-PEc0acrhOF7u4s66NNTc2L7XT9XZMwZRMa0tsW0x6HoVY6wFb6P7W9EgvwSfESjJvnJMEZyyNoaml-FbG4X5_OIzUF_5SLVDTNCChpL3_Fnrrm0ElOIcPBiCcVVQtVNrd2J0BMgXwTG4OkTbDShbA0ciqFYIibAcxKGGfY4PatR7ijl5JCG3rIYyVkNNgCk-dKk26O_4kLmivy0BbFvOB7q7U8uDVSWdynzfsmEfS8iLlq5RzlWz83jU" />
+    </div>
+   </main>
+  </div>
+ </div>
+</section>
+
+<section class="bg-background-light dark:bg-background-dark font-display">
+ <div class="min-h-screen flex items-center justify-center p-4">
+  <div class="max-w-7xl w-full mx-auto">
+   <div class="text-center mb-8">
+    <div class="flex items-center justify-center space-x-2 mb-4">
+     <span class="material-icons text-primary text-xl">
+      contact_mail
+     </span>
+     <span class="text-sm font-semibold text-gray-800 dark:text-gray-300">My Contact</span>
+    </div>
+    <h1 class="text-3xl md:text-5xl font-extrabold tracking-wide text-gray-900 dark:text-gray-100">
+     I WANT TO HEAR FROM YOU
+    </h1>
+   </div>
+   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+    <div class="w-full">
+     <form action="#" class="space-y-6" method="POST">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+       <div>
+        <label class="sr-only" for="name">Your Name</label>
+        <input
+         class="w-full bg-white dark:bg-gray-800 border border-orange-200 dark:border-gray-700 rounded-lg py-3 px-4 text-gray-700 dark:text-gray-300 placeholder-gray-400 focus:ring-primary focus:border-primary"
+         id="name" name="name" placeholder="Your Name" type="text" />
+       </div>
+       <div>
+        <label class="sr-only" for="email">Your Email</label>
+        <input
+         class="w-full bg-white dark:bg-gray-800 border border-orange-200 dark:border-gray-700 rounded-lg py-3 px-4 text-gray-700 dark:text-gray-300 placeholder-gray-400 focus:ring-primary focus:border-primary"
+         id="email" name="email" placeholder="Your Email" type="email" />
+       </div>
+       <div>
+        <label class="sr-only" for="phone">Your phone</label>
+        <input
+         class="w-full bg-white dark:bg-gray-800 border border-orange-200 dark:border-gray-700 rounded-lg py-3 px-4 text-gray-700 dark:text-gray-300 placeholder-gray-400 focus:ring-primary focus:border-primary"
+         id="phone" name="phone" placeholder="Your phone" type="tel" />
+       </div>
+       <div>
+        <label class="sr-only" for="subject">Subject</label>
+        <input
+         class="w-full bg-white dark:bg-gray-800 border border-orange-200 dark:border-gray-700 rounded-lg py-3 px-4 text-gray-700 dark:text-gray-300 placeholder-gray-400 focus:ring-primary focus:border-primary"
+         id="subject" name="subject" placeholder="Subject" type="text" />
+       </div>
+      </div>
+      <div class="relative">
+       <label class="sr-only" for="message">Message</label>
+       <textarea
+        class="w-full bg-white dark:bg-gray-800 border border-orange-200 dark:border-gray-700 rounded-lg py-3 px-4 text-gray-700 dark:text-gray-300 placeholder-gray-400 focus:ring-primary focus:border-primary pr-20"
+        id="message" name="message" placeholder="Message" rows="6"></textarea>
+       <div class="absolute bottom-3 right-3 flex items-center space-x-2">
+        <img alt="Icon group 1" class="h-6 w-auto"
+         src="https://lh3.googleusercontent.com/aida-public/AB6AXuD51WTpu58KTyxmq6k8jpYoSEVBEU6qQ9esDQuBJDEND7XZ-q_6sk5gUveuHu6sOV-Kdik4RP1f1IsZ93__wsTBGmVByZVXKbsm4sra-BgzuharjN8sxc22JlZQzPVjRcoT2LfjLIo8MrBPOHC_7mphTkWOohZ7RfeDLAbBF1kiX2Zpi-nDe408FAhe0FLYl9ijNCRIleEZJQtyIWbkilascLCCr5hfRdnYwxEYa9GTrlD8NPicgtMRLkTRDIKdwjRBtU5MsjeGFfs" />
+        <img alt="Icon group 2" class="h-6 w-auto"
+         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZnsIGv8W3e4QO2LvsexJpq2z09E6lvW7hsHpdVCQ5f78CcnMGwCZhVWjkIXBjIGg-tZA_A_fcLgmUVhhORgq75Z61lnnGbtQFWg1FgGGLO04Yb41M2OL36AWUJkDfz8aCCSQHNJWqbC2j7HORLi2wvDLhRzBlRxqyVe84yUuI_Yl-ZjsZzO3fwRhkNfsI6avQIIaXLaYkQU_c5v832MWf5IA2CAGNG4GOoCcB5GbjeJwPL3bVqMZuVtxSuDZQmKnZxdE1T5vX2g0" />
+       </div>
+      </div>
+      <div>
+       <button
+        class="w-full md:w-auto bg-primary text-white font-bold py-3 px-8 rounded-lg hover:opacity-90 transition-opacity duration-300"
+        type="submit">
+        Send Me Message
+       </button>
+      </div>
+     </form>
+    </div>
+    <div class="space-y-8 lg:pt-2">
+     <div class="flex items-start space-x-4">
+      <div class="flex-shrink-0 bg-orange-100 dark:bg-orange-900/50 p-3 rounded-lg">
+       <span class="material-icons text-primary !text-2xl">location_on</span>
+      </div>
+      <div>
+       <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100">Address</h3>
+       <p class="text-gray-600 dark:text-gray-400">202 Dog Hill Lane Beloit, KS 67420</p>
+      </div>
+     </div>
+     <div class="flex items-start space-x-4">
+      <div class="flex-shrink-0 bg-orange-100 dark:bg-orange-900/50 p-3 rounded-lg">
+       <span class="material-icons text-primary !text-2xl">phone_in_talk</span>
+      </div>
+      <div>
+       <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100">Phone</h3>
+       <p class="text-gray-600 dark:text-gray-400">+01589634755</p>
+      </div>
+     </div>
+     <div class="flex items-start space-x-4">
+      <div class="flex-shrink-0 bg-orange-100 dark:bg-orange-900/50 p-3 rounded-lg">
+       <span class="material-icons text-primary !text-2xl">email</span>
+      </div>
+      <div>
+       <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100">Email</h3>
+       <p class="text-gray-600 dark:text-gray-400">credesign@gmail.com</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="bg-background-light dark:bg-background-dark font-display">
+ <footer class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="space-y-4 md:col-span-2 lg:col-span-1">
+     <div class="flex items-center space-x-2">
+      <span class="relative flex items-center text-2xl font-bold text-gray-900 dark:text-white">
+       Cre<span class="relative"><span
+         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-6 w-6 bg-primary rounded-full"></span><span
+         class="relative z-10 text-white">D</span></span>esign
+      </span>
+     </div>
+     <p class="text-sm text-gray-600 dark:text-gray-400">
+      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+      corrupti quos dolores et molestias excepturi sint occaecati.
+     </p>
+     <p class="font-semibold text-gray-900 dark:text-white">
+      credesign@gmail.com
+     </p>
+    </div>
+    <div class="space-y-4">
+     <h3 class="text-lg font-bold text-gray-900 dark:text-white">Explore Link</h3>
+     <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+      <li><a class="hover:text-primary" href="#">About</a></li>
+      <li><a class="hover:text-primary" href="#">Resume</a></li>
+      <li><a class="hover:text-primary" href="#">Portfolio</a></li>
+      <li><a class="hover:text-primary" href="#">Blog</a></li>
+     </ul>
+    </div>
+    <div class="space-y-4">
+     <h3 class="text-lg font-bold text-gray-900 dark:text-white">My Services</h3>
+     <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+      <li><a class="hover:text-primary" href="#">UI/UX Design</a></li>
+      <li><a class="hover:text-primary" href="#">Mobile App</a></li>
+      <li><a class="hover:text-primary" href="#">Graphics Design</a></li>
+      <li><a class="hover:text-primary" href="#">Web Developer</a></li>
+     </ul>
+    </div>
+    <div class="space-y-4">
+     <h3 class="text-lg font-bold text-gray-900 dark:text-white">Follow me</h3>
+     <div class="flex space-x-3">
+      <a class="w-10 h-10 bg-primary text-white rounded-md flex items-center justify-center hover:opacity-90" href="#">
+       <img alt="Facebook icon" class="w-6 h-6"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdwG_JTMBnFdhlHrmqhkycYISLHzk3cVinvsbaM2ERyloUcjWvec0RfoLd0HA9m7MB9rsJyn57kz7TkDeuwsRuBDrw47Y4Q5LFrZtiWtFdupq_RPuD9i1u0781aPgnZGBr9i9p4ivbbRElAPuDambGE1ORQ-jtnNEE5Wp_pSGqvJlCO72WEOhX1LfUplvQ50QZ3zc93nmP9wNbppePlAnJ017dG7IZHLaeKngmLZlEGrpDcUhPFVyVXpvXpt3xCcgeAy-fsO6CWjo" />
+      </a>
+      <a class="w-10 h-10 bg-primary text-white rounded-md flex items-center justify-center hover:opacity-90" href="#">
+       <img alt="Twitter icon" class="w-6 h-6"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDst6l5-kjTqXTR0WO3BoGKE3MSeQkd7jc9-Ka2wwtcwX7cbz1MtuBN6J98BxD6zTnRsSKmSkpPb8u6ZEwoxlagm6UTtYyFPHlnSC20CgW608t-6F-GIG7ru0xnoX13a0Bo20j5llbOqTyT1c5_ca1eCboZVXWwUn-KvHKjcmCk1Mk9taTcfQuXL0CBnc858MwYEZkkfk590FFPPyUxCVflyaw4xh4iDQx_GTcVrnz0MoH9pWtmPtyPZ4EzLnvAh_MceyFD8ydmGHg" />
+      </a>
+      <a class="w-10 h-10 bg-primary text-white rounded-md flex items-center justify-center hover:opacity-90" href="#">
+       <img alt="Dribbble icon" class="w-6 h-6"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5tTnJ8DVhhJF1dZtFIzI2xn_rUYehAetqnTFH9vssGTvMUp89M-xjwQHdW7O_3WQDXfk7hoFA5040YFfLrrJT9h6SIHS4bqOOmgQ6eHh-hDq60bUuUuknW5rK8LjexATVOyaIlgLk51yWmP9awgfz0N0mK0HoYR_ZgMHLiHU0TewxFKchEVNGGMTw_DnBLURxn5J_MxUIziTM5bjcodQ5kEhUni9hjbeekZbDWKI7B9tM0ijaV_OCw7wsaDgeEDVdWUJxd51Z8DA" />
+      </a>
+      <a class="w-10 h-10 bg-primary text-white rounded-md flex items-center justify-center hover:opacity-90" href="#">
+       <img alt="Behance icon" class="w-6 h-6"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAHmtYAbyZ0-v9xx8Oxva-ynp7njfcpoWkf0lNcGJXYhwYKQCSlXE4khAjcgLzm3bBndKYRMiLfFddGq6eAcMup0Dz-iHgthaRcFvOpssB4I810UkFaK5J0T-qY0McpXP8MZhX2RkBWPc5bVx_e3EyTXoYutdNFZQZXXtIRgIrJ-27crD0inICbaMobO6Wsdz32h7D6ENyonjE3J1ts2rbHsufBbauqWX6ZtPQfMoMqZyh573fdCbQI4hjt278PivVDH5Q3nYKpJE" />
+      </a>
+     </div>
+     <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+      <div class="flex items-start">
+       <span class="material-icons text-primary mr-2" style="font-size: 18px;">location_on</span>
+       <span>202 Dog Hill Lane Beloit, KS 67420</span>
+      </div>
+      <div class="flex items-center">
+       <span class="material-icons text-primary mr-2" style="font-size: 18px;">call</span>
+       <span>1-800-915-6270</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div
+    class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400 space-y-4 md:space-y-0">
+    <p>All rights reserved © 2023 Credesign</p>
+    <div class="flex space-x-6">
+     <a class="hover:text-primary" href="#">Terms &amp; Condition</a>
+     <a class="hover:text-primary" href="#">Privacy policy</a>
+    </div>
+   </div>
+  </div>
+ </footer>
+
+</section>
+
+</html>
