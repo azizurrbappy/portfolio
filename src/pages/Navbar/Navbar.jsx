@@ -10,6 +10,10 @@ const Navbar = () => {
       link: '/',
     },
     {
+      title: 'About',
+      link: '#about',
+    },
+    {
       title: 'Service',
       link: '#',
     },
@@ -28,7 +32,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-2">
           <span className="text-2xl font-bold text-stone-900 dark:text-white">
-            CreDesign
+            Azizur Rahman Bappy
           </span>
         </div>
 
@@ -42,14 +46,14 @@ const Navbar = () => {
           {links.map(link => (
             <Link
               className="text-base font-medium text-stone-600 dark:text-stone-300 hover:text-primary dark:hover:text-primary transition-colors duration-200"
-              href={link.link}
+              to={link.link}
             >
               {link.title}
             </Link>
           ))}
           <Link
             className="bg-primary text-white text-base font-semibold py-2 px-6 rounded-md shadow-md hover:bg-orange-600 transition-colors"
-            href="#"
+            to="#"
           >
             Contact
           </Link>
