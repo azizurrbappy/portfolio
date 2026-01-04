@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <>
       <section
-        id="about"
+        id="#about"
         className="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200"
       >
         <div className="flex flex-col items-center justify-center min-h-screen p-4">

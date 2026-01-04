@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,15 +15,15 @@ const Navbar = () => {
     },
     {
       title: 'Service',
-      link: '#',
+      link: '#service',
     },
     {
       title: 'Portfolio',
-      link: '#',
+      link: '#portfolio',
     },
     {
       title: 'Blog',
-      link: '#',
+      link: '#blog',
     },
   ];
 
@@ -44,16 +44,16 @@ const Navbar = () => {
           } md:flex items-center space-x-8`}
         >
           {links.map(link => (
-            <Link
+            <NavLink
               className="text-base font-medium text-stone-600 dark:text-stone-300 hover:text-primary dark:hover:text-primary transition-colors duration-200"
               to={link.link}
             >
               {link.title}
-            </Link>
+            </NavLink>
           ))}
           <Link
             className="bg-primary text-white text-base font-semibold py-2 px-6 rounded-md shadow-md hover:bg-orange-600 transition-colors"
-            to="#"
+            to="#contact"
           >
             Contact
           </Link>

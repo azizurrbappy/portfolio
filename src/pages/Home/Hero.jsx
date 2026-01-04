@@ -18,7 +18,8 @@ const Hero = () => {
         </p>
         <Link
           className="mt-10 inline-block bg-primary text-white font-semibold py-4 px-10 rounded-lg shadow-lg hover:bg-orange-600 transition-colors text-lg"
-          to="#"
+          target="_blank"
+          to="https://drive.google.com/file/d/1ESfc2ihf5d1m4eI4h9CzErVafU-fJSn0/view?usp=sharing"
         >
           Download My CV
         </Link>

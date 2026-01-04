@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-primary: #f97316;
   --color-background-light: #fff7ed;
